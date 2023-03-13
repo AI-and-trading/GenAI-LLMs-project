@@ -19,6 +19,18 @@ library(gt)
 
 ## Introduction
 
+-   Set the statement in the context of modern financial research practices
+
+-   Use high-quality research to illustrate the pros and cons of the statement. (for example the above 2 papers)
+
+-   Choose a classic research problem in finance. For example
+
+-   Is there a publication bias crisis in finance research?
+
+-   Is climate finance a fad or the future?
+
+-    Is finance research becoming less impactful for the financial services industry?
+
 ::: callout-tip
 It should be sufficiently non-technical that an intelligent person who is unfamiliar with the field could grasp what the study is about. The introduction should include a summary of the relevant articles in the field. At a minimum, the papers provided should be summarized in the student's own words. The end of the introduction should introduce what is going to happen in the rest of the paper.
 
@@ -38,88 +50,37 @@ If this is too complicated you can use manual copy and paste referencing.
 ## Data and methods
 
 ::: callout-tip
-A detailed description of the data to include, the source, the format, the data features and any limitations, which are relevant to the analysis. Where appropriate use of professional data visualisations. The model and estimation techniques being used should be outlined, using equations where appropriate and with a critique of their limitations, weaknesses and potential improvements.
 
-**Tip**: Use clear and concise graphical representation as per the principles of [Edward Tufte](https://thedoublethink.com/tuftes-principles-for-visualizing-quantitative-information/). Do not mechanically replicate the course material! This is your chance to express your understanding of the techniques, their applications and their limitations.
+-   a brief explanation of the GPT model you used
+
+-   The raw financial research questions you used as input data (should
+    be based on classical financial research questions that you studied in
+    the first semester)
+
+-   Prompt engineering techniques you used
 :::
 
 ## Results
 
 ::: callout-tip
-Results should be displayed professionally in tabulated or graph form, with emphasis on any interesting features. Inferences should be related to the original aims of the project and if the results are what was expected based on prior academic research.
-
-**Tip**: The bland reporting of results without proper discussion and critique will score low in this section! Mention each table/figure explicitly in the text; poor referencing will also be penalised!. Results should be tabulated in a professional manner in line with a high-quality journal output. Copy and paste shortcuts from statistical software is not professional and will be penalised.
+Detail the generative results from your GPT models and critique your output 
 :::
 
-## Discussion
+## Conclusion
 
 ::: callout-tip
-In conclusion you should restate your original aim and outline the most important results, as well as the weaknesses in the study. It is also important to state some directions for future research in the area.
+ummarise and state your critical assessment of the statement using the
+scientific evidence presented in the previous sections. Students should
+use a quarto report to produce a html file for submission to the GitHub
+class organisation. **The lecturer reserves the right to examine students orally after each assessment if he suspects *foul play.***
 
-Summarise and state your critical assessment using any evidence you have provided in the previous sections.
-
-**Tip**: The bland reporting of results without proper discussion and critique will score low in this section! Mention each table/figure explicitly in the text; poor referencing will also be penalised!. Results should be tabulated in a professional manner in line with a high-quality journal output. Copy and paste shortcuts from statistical software is not professional and will be penalised.
+Some examples of interactive content
 :::
 
-# Some examples of interactive content
+# Appendix
 
-## Data
+A summary of all the prompt engineering you have done.
 
-Use the `tsfe::ftse` data for this example
-
-```{r}
-#| label: load-packages
-#| message: false
-
-library(tidyverse)
-library(tsfe)
-library(data.table)
-```
-
-```{r}
-#| label: glimpse-data
-
-glimpse(ftse350)
-```
-
-```{r}
-#| label: interactive-glimpse-data
-
-ftse350 %>% data.table()
-```
-
-## Interactive time plot
-
-@fig-plot-ftse is a interactive time plot of the FTSE 350 monthly price index.
-
-```{r}
-#| label: fig-plot-ftse
-#| fig-cap: FTSE 350 Price Index
-#| fig-width: 5
-#| fig-asp: 0.618
-library(plotly)
-ftse_m_ts %>%
-  autoplot() %>%
-  ggplotly()
-
-```
-
-## FTSE 350 constituents {.smaller}
-
-@tbl-ftse-constituents shows the first 10 stocks from the ftse350 index data.
-
-```{r}
-#| label: tbl-ftse-constituents
-#| tbl-cap: First 3 stocks from the dataset by alphabetical order and the market prices.
-#| code-fold: true
-names_of_ftse_stocks<-unique(ftse350$Name)
-table(ftse350$variable)
-ftse350 |>
-  filter(Name %in% names_of_ftse_stocks[1:3]) |>
-  filter(variable=="Price") |>
-  data.table()
-```
-
-## Reference
+# References
 
 *This is where the cited references should appear when you render the document to a html*

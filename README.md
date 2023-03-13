@@ -2,17 +2,6 @@
 
 Hello, Quarto: A World of Possibilities (for Reproducible Publishing)
 
-## Setup notes for FIN7028
-
-- Access to [Q-RaP FIN7028 financial time series workspace](https://sso.posit.cloud/q-rap?redirect=https%3A%2F%2Fposit.cloud%2Fspaces%2F211210%2Fjoin%3Faccess_code%3D0jJzcGhdja1HwVVMRYY-FZRlTIg8XNyvt7XzPw7g)
-- Packages: tidyverse, plotly, tsfe
-
-## Setup notes for FIN7030
-
-- Access to [Q-RaP FIN7030 financial time series workspace](https://sso.posit.cloud/q-rap?redirect=https%3A%2F%2Fposit.cloud%2Fspaces%2F211210%2Fjoin%3Faccess_code%3D0jJzcGhdja1HwVVMRYY-FZRlTIg8XNyvt7XzPw7g)
-- Packages: tidyverse, plotly, fml
-- A working OpenAI API key
-
 ### To get you started with quarto
 
 * [Quarto Introduction Tutorial](https://quarto.org/docs/get-started/hello/rstudio.html)
@@ -20,47 +9,6 @@ Hello, Quarto: A World of Possibilities (for Reproducible Publishing)
 * [Quarto Cheatsheet](./Quarto_Cheat_Sheet.pdf)
 - Create a simple Quarto document called `index.qmd` and edit it using the RStudio Visual Editor with sections 
 
-## Demo
-
-### Documents
-1. Create a simple Quarto document called `index.qmd` and edit it using the RStudio Visual Editor with sections Introduction and Critique, Data amd Methods, Results, and Discussions
-2. Add code chunk options:
-  - `echo: false` in `execute` in the YAML
-  - `code-fold`
-  - `fig-alt`
-  - teaching tip: `echo: fenced`
-3. Add a figure and a table and cross reference them
-3. Add a citation
-
-> **Tip**: It is good practice to HIT and KNIT every time you do a new piece of code or text chunk
-
-### Slides
-
-- Change `format: revealjs`
-- Add section headings: First level headings Introduction and Analysis, under Analysis a second level heading called Modeling
-- Add columns to slides
-- Reveal code with `echo: true`
-  - teaching-tip: `code-line-numbers`
-- Change `output-location` of figure
-
-### Websites
-
-- Add another document `about.qmd`
-- Add `quarto.yml` 
-
-```
-project:
-  type: website
-
-website:
-  title: "Hello Quarto - Website"
-  navbar:
-    left:
-      - index.qmd
-      - about.qmd
-```
-
-- Render and then `publish quarto`
 
 ## AI policy
 
