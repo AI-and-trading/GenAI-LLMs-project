@@ -38,13 +38,13 @@ Use high-quality literature to illustrate the pros and cons of the argument.
 
 Some examples of how to use the `.bib` to add references
 
--   In line @dowling2023 will render as Dowling and Lucey (2023)
+-   In line, @dowling2023 will render as Dowling and Lucey (2023)
 
 -   And [@hutson2022] renders as (Hutson, 2022)
 
-If this is too complicated you can use manual copy and paste referencing.
+If this is too complicated, you can manually copy and paste referencing.
 
-**Tip:** A good introduction should provide answers to What are the aims and objective of the research?, Does it address a new problem or an old problem in a new way? A good literature review critically assesses the research to date.
+**Tip:** A good introduction should provide answers to the "What are the aims and objective of the research?", "Does it address a new problem or an old problem in a new way?" A good literature review critically assesses the research to date.
 :::
 
 ## Data and methods
@@ -63,24 +63,25 @@ If this is too complicated you can use manual copy and paste referencing.
 ## Results
 
 ::: callout-tip
-Detail the generative results from your GPT models and critique your output 
+Detail the generative results from your GPT models and critique your output. 
 :::
 
 ## Conclusion
 
 ::: callout-tip
-ummarise and state your critical assessment of the statement using the
+Summarise and state your critical assessment of the statement using the
 scientific evidence presented in the previous sections. Students should
-use a quarto report to produce a html file for submission to the GitHub
-class organisation. **The lecturer reserves the right to examine students orally after each assessment if he suspects *foul play.***
+use a quarto report to produce a HTML file for submission. 
 
-Some examples of interactive content
+- ** Submit both a HTML report and the quarto document using a zip file to Canvas**
+- **The lecturer reserves the right to examine students orally after each assessment if he suspects *foul play.**
+
 :::
 
 # Appendix
 
-A summary of all the prompt engineering you have done.
+I'm sharing a summary of all the prompt engineering you have done here.
 
 # References
 
-*This is where the cited references should appear when you render the document to a html*
+*This is where the cited references should appear when you render the document to a HTML*
